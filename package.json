@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "git-commit-msg-linter": "^3.2.8"
+    "@types/node": "^17.0.8",
+    "git-commit-msg-linter": "^3.2.8",
+    "typecript": "^0.0.1-security"
   }
 }
