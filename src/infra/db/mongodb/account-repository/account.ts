@@ -8,7 +8,6 @@ export class AccountMongoRepository {
   async add (accountData: AddAccountModel): Promise<ObjectId> {
     const accountCollection = MongoHelper.getCollection('accounts')
     const result = await accountCollection.insertOne(accountData)
-    const insertedId = result.insertedId
-    return await new Promise(resolve => resolve(insertedId))
+    return await new Promise(resolve => resolve(result.insertedId))
   }
 }
